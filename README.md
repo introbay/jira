@@ -11,6 +11,8 @@ This is Jira image for using linked with a docker database container.
 
 Requirements
 ------------
+If you want to store your data in a production environment database, use one and link it from this container.
+If you don't link any database container, then a SQLite database will be used.
 
 Installation
 ------------
