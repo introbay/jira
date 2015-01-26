@@ -25,11 +25,6 @@ docker build -t="$USER/jira:6.3" .
 
 Quick Start
 -------------
-    Database Type: PostgreSQL
-    Hostname: localhost
-    Database: jiradb
-    DBuser: postgres
-
 Pull the latest postgres version from the **Docker Trusted Build**.
 ```bash
 docker pull sameersbn/postgresql:9.1-1
