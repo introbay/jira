@@ -1,14 +1,13 @@
-Docker + Chef Solo + Postgresql + Jira = Love!
+Docker + Jira + Database container = Love!
 
-License and Authors
+Introduction
 -------------------
-Author: Tom Eklöf
-I am in no way affiliated with company Atlassian® or the Jira® product.
-
+This is a fork from https://github.com/docker-atlassian/jira.
+The main proposal is to have an updated version of the docker and with a separated database container, so everyone can choose either the database engine, create a new one or use an existing container.
 
 Description
 -----------
-This is Jira image with Postgresql.
+This is Jira image for using linked with a docker database container.
 
 Requirements
 ------------
