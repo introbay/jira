@@ -1,7 +1,7 @@
-#install4j response file for JIRA 6.1.2
-#Thu Oct 31 15:20:21 UTC 2013
+#install4j response file for JIRA 6.3.12
+#Sun Dec 14 02:03:22 UTC 2014
 rmiPort$Long=8005
-app.jiraHome=/opt/atlassian/jira-home
+app.jiraHome=/opt/atlassian/application-data/jira
 app.install.service$Boolean=true
 existingInstallationDir=/opt/JIRA
 sys.confirmedUpdateInstallationString=false

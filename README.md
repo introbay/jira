@@ -13,13 +13,44 @@ This is Jira image with Postgresql.
 Requirements
 ------------
 
-Configuration
+Installation
+------------
+You can build the image yourself.
+
+```bash
+git clone https://github.com/ignaciolflores/jira.git
+cd jira
+docker build -t="$USER/jira:6.3" .
+```
+
+Quick Start
 -------------
     Database Type: PostgreSQL
     Hostname: localhost
     Database: jiradb
     DBuser: postgres
 
+Pull the latest postgres version from the **Docker Trusted Build**.
+```bash
+docker pull sameersbn/postgresql:9.1-1
+```
+
+Create an instance of the docker database
+```bash
+docker run --name jira-postgresql -d \
+  -e 'DB_USER=dbuser' -e 'DB_PASS=dbpass' -e 'DB_NAME=dbname' \
+  sameersbn/postgresql:9.1-1
+```
+
+Create an instance of the Jira docker linked to the database docker image.
+```bash
+docker run -i -t \
+	-p local_port:8080 \
+	-v /local/dir/application-data:/opt/atlassian/application-data \
+	--link jira-postgresql \
+	introbay/jira:6.3.12 \
+	/init.sh
+```
 
 Contributing
 ------------
