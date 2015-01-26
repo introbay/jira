@@ -44,12 +44,12 @@ docker run --name jira-postgresql -d \
 
 Create an instance of the Jira docker linked to the database docker image.
 ```bash
-docker run -i -t \
-	-p local_port:8080 \
-	-v /local/dir/application-data:/opt/atlassian/application-data \
-	--link jira-postgresql \
-	introbay/jira:6.3.12 \
-	/init.sh
+docker run --name jira -d \
+    -p local_port:8080 \
+    -v /local/dir/application-data:/opt/atlassian/application-data \
+    --link jira-postgresql:db \
+    "$USER"/jira:6.3 \
+    /init.sh
 ```
 
 Contributing
