@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 MAINTAINER Ignacio López Flores ignacio@introbay.com
 
 ENV AppName jira-software
-ENV AppVer 7.0.4
+ENV AppVer 7.0.10
 ENV Arch x64
 
 # Fetch the files
