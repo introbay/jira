@@ -5,11 +5,11 @@ FROM ubuntu:14.04
 MAINTAINER Ignacio López Flores ignacio@introbay.com
 
 ENV AppName jira-software
-ENV AppVer 7.1.6
+ENV AppVer 7.2.6
 ENV Arch x64
 
 # Fetch the files
-ADD https://downloads.atlassian.com/software/jira/downloads/atlassian-$AppName-$AppVer-jira-$AppVer-$Arch.bin /opt/
+ADD https://www.atlassian.com/software/jira/downloads/binary/atlassian-$AppName-$AppVer-$Arch.bin /opt
 ADD ./install_cmds.sh /install_cmds.sh
 ADD ./response.varfile /opt/response.varfile
 ADD ./init.sh /init.sh
