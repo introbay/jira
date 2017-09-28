@@ -1,1 +1,1 @@
-docker build -t introbay/jira:7.4.3 .
+docker build -t introbay/jira:7.5.0 .
