@@ -1,11 +1,11 @@
 # Install Atlassian Jira
 # This is a trusted build based on the "base" image
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 MAINTAINER Ignacio López Flores ignacio@introbay.com
 
 ENV AppName jira-software
-ENV AppVer 7.10.1
+ENV AppVer 8.0.2
 ENV Arch x64
 
 # Fetch the files
