@@ -1,6 +1,6 @@
 # Install Atlassian Jira
 # This is a trusted build based on the "base" image
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 MAINTAINER Ignacio López Flores ignacio@introbay.com
 
