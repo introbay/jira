@@ -14,6 +14,10 @@ ADD ./install_cmds.sh /install_cmds.sh
 ADD ./response.varfile /opt/response.varfile
 ADD ./init.sh /init.sh
 
+# Install dependencies
+RUN apt-get update && apt-get install -y fontconfig \
+	&& rm -rf /var/lib/apt/lists/*
+
 ## Now Install Atlassian Jira
 RUN /install_cmds.sh
 
